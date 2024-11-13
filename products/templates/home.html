@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+    {% block content %}
+        <div class="text-center">
+            <header class="bg-secondary p-2 text-white bg-opacity-25 text-center">
+                <h3 class="fw-light mt-2">Eletronic appliance System</h3>
+                <p>
+                    Explore and learn creating, update and deleting data that you want.
+                </p>
+            </header>
+            <a href="{% url 'form' %}" class="text-secondary mt-4 btn">Create a new product</a>
+
+            {% if product %}
+                <div class="container mt-4">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 text-white">
+                        {% for product in product %}
+                            <div class="col">
+                                <h4>{{ product.name }}</h4>
+                                <p>
+                                    <strong>
+                                        {{ product.price }}
+                                    </strong> <br>
+                                    Durability: {{ product.durability }}
+                                        <hr>
+                                    {{ product.description }}  <br>
+                                    
+                                </p>
+                                <a href="{% url 'edit' product.id %}" class="text-decoration-none text-success px-2 btn">Edit</a>
+                                <a href="{% url 'delete' product.id %}" class="text-decoration-none text-danger px-2 btn">Delete</a>
+                            </div> 
+                        {% endfor %} 
+                    </div>
+                </div>
+            {% else %}
+                <h3 class="mt-4 text-secondary">You don't have any product created yet</h3>
+            {% endif %}
+        </div>
+    {% endblock %}

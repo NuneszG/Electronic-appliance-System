@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "eletronic-appliance-system"
+version = "0.1.0"
+description = ""
+authors = ["GuilhermeNunes <digobros13@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.14.0"
+
+[tool.taskipy.tasks]
+server = "python manage.py runserver"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

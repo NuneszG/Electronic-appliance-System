@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+    {% block content %}
+        <div class="text-center text-white mt-5">
+            <form action="{% url 'create' %}" method="POST" class="col-2 mx-auto"> {% csrf_token %}
+                <p>
+                    <label for="name">Name</label> <br>
+                    <input type="text" class="form-control bg-black mt-2 text-white" name="name" id="name" placeholder="product name">
+                </p>
+                <p>
+                    <label for="price">Price</label> <br>
+                    <input type="text" class="form-control bg-black mt-2 text-white" name="price" id="price" placeholder="xx,xx">
+                </p>
+                <p>
+                    <label for="durability">Durability</label> <br>
+                    <input type="text" class="form-control bg-black mt-2 text-white" name="durability" id="durability" placeholder="product durability">
+                </p>
+                <p>
+                    <label for="description">Description</label> <br>
+                    <input type="text" class="form-control bg-black mt-2 text-white" name="description" id="description" placeholder="product name">
+                </p>
+                <input type="submit" value="Create" class="btn text-white mb-3">
+            </form>
+
+            <a href="{% url 'home' %}" class="text-decoration-none text-white">Back</a>
+        </div>
+    {% endblock %}
