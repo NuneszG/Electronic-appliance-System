@@ -10,7 +10,7 @@ Um simples crud, no qual o usuário pode criar, atualizar e deletar diferentes p
 - delete any product you want 
 
 <img src="/assets/media/Captura de ecrã 2024-11-13 211347.png">
-<img src="/assets/media/Captura de ecrã 2024-11-13 235353.png-11-13 211347.png">
+<img src="/assets/media/Captura de ecrã 2024-11-13 235353.png">
 
 ### Docker
 ```
