@@ -40,16 +40,16 @@ Windows
 
 ### Install
 ```
-Poetry install
+poetry install
 ```
 
 ### Run
 ```
 With poetry
-Task server
+task server
 
 or
 
 Without poetry
-Python manage.py runserver
+python manage.py runserver
 ```
