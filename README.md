@@ -16,9 +16,17 @@ Um simples crud, no qual o usuário pode criar, atualizar e deletar diferentes p
 https://github.com/NuneszG/Electronic-appliance-System.git
 ```
 
-### Docker
+### Docker compose
 ```
-docker-compose up, and access localhost:8000
+docker-compose db up --build
+```
+```
+docker-compose products up --build
+```
+
+### Run container
+```
+docker-compose up
 ```
 
 ### Virtual space
