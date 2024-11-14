@@ -11,14 +11,14 @@ Um simples crud, no qual o usuário pode criar, atualizar e deletar diferentes p
 
 <img src="/assets/media/Captura de ecrã 2024-11-13 211347.png">
 
-### Docker
-```
-docker-compose up, and access localhost:8000
-```
-
 ### Clone repository
 ```
 https://github.com/NuneszG/Electronic-appliance-System.git
+```
+
+### Docker
+```
+docker-compose up, and access localhost:8000
 ```
 
 ### Virtual space
