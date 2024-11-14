@@ -17,11 +17,12 @@
                                 <h4>{{ product.name }}</h4>
                                 <p>
                                     <strong>
-                                        {{ product.price }}
+                                        ${{ product.price }}
                                     </strong> <br>
-                                    Durability: {{ product.durability }}
+                                    Durability <br>
+                                    {{ product.durability }}
                                         <hr>
-                                    {{ product.description }}  <br>
+                                    {{ product.description }} 
                                     
                                 </p>
                                 <a href="{% url 'edit' product.id %}" class="text-decoration-none text-success px-2 btn">Edit</a>

@@ -3,7 +3,19 @@
 Esse projeto, tem como principal funcionalidade gerenciar dados de Produtos eletronicos.
 Um simples crud, no qual o usuário pode criar, atualizar e deletar diferentes produtos que ele queira.
 
-<img src="/assets/media/Captura de ecrã 2024-11-13 193640.png">
+### Features
+- Get all products in database
+- create a new product 
+- update any of them
+- delete any product you want 
+
+<img src="/assets/media/Captura de ecrã 2024-11-13 211347.png">
+<img src="/assets/media/Captura de ecrã 2024-11-13 235353.png-11-13 211347.png">
+
+### Docker
+```
+docker-compose up, and access localhost:8000
+```
 
 ### Clone repository
 ```

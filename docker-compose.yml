@@ -1,0 +1,27 @@
+services: 
+  db: 
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_DB: products
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Guieduda1731
+    volumes: 
+      - "postgres_data:/var/lib/postgresql/data"
+
+  products:
+    build: .
+    volumes: 
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+        DB_NAME: products
+        DB_USER: postgres
+        DB_PASSWORD: Guieduda1731
+        DB_HOST: db
+        DB_PORT: 5432
+
+volumes:
+  postgres_data:
